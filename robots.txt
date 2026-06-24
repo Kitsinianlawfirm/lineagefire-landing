@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you/
 
 Sitemap: https://lineagefire.com/sitemap.xml
