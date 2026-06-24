@@ -143,7 +143,15 @@ def build_og(headline_lines, yellow_bar_text, trust_line, domain, output_filenam
     bar_h = 78
     bar_y = y_cursor + 30  # 30px breathing room below headline
     draw.rectangle([0, bar_y, W, bar_y + bar_h], fill=COLORS["yellow"])
-    bar_font = f(FONT_BARLOW_BLACK, 38)
+    # Auto-fit the bar text to the strip width with horizontal padding so it never
+    # touches the edges or overflows (the Spanish hook is longer than the English).
+    bar_pad_x = 56
+    bar_avail_w = W - 2 * bar_pad_x
+    bar_size = 38
+    bar_font = f(FONT_BARLOW_BLACK, bar_size)
+    while text_width(draw, yellow_bar_text, bar_font) > bar_avail_w and bar_size > 20:
+        bar_size -= 1
+        bar_font = f(FONT_BARLOW_BLACK, bar_size)
     # Nudge text up 3px — cap-centered all-caps reads bottom-heavy at default
     draw_cap_centered(draw, W // 2, bar_y + bar_h // 2 - 3, yellow_bar_text, bar_font, COLORS["black"])
 
