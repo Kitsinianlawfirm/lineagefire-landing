@@ -14,7 +14,7 @@
 </script>
 
 <title>Boyle Heights Warehouse Fire Lawyer | Kitsinian Law Firm</title>
-<meta name="description" content="Affected by the June 2026 Lineage Logistics warehouse fire in Boyle Heights? Ordered to shelter in place, or dealing with smoke, soot, or ash damage? Kitsinian Law Firm offers a free, confidential case review. Se habla español." />
+<meta name="description" content="Affected by the June 2026 Lineage Logistics warehouse fire in Boyle Heights? Dealing with smoke, soot, ash, or property damage from the ongoing fire? Kitsinian Law Firm offers a free, confidential case review. Se habla español." />
 <meta name="author" content="Kitsinian Law Firm, APC" />
 <meta name="publisher" content="Kitsinian Law Firm, APC" />
 <meta name="theme-color" content="#0C0E14" />
@@ -853,8 +853,8 @@ footer .contact-cta a {
     <h1 class="visually-hidden">Boyle Heights Warehouse Fire Lawyer — Free Case Review | Kitsinian Law Firm</h1>
     <div class="trust-bar">Free Case Review · No Attorneys' Fees Unless We Recover</div>
     <p class="hero-headline" aria-hidden="true">BOYLE HEIGHTS<br/>WAREHOUSE FIRE</p>
-    <p class="hero-sub">ORDERED TO SHELTER IN PLACE?<br/>YOU MAY BE OWED COMPENSATION.</p>
-    <p class="lede">If you or your family were affected by the days-long June 2026 fire at the Lineage Logistics cold-storage warehouse in Boyle Heights, you may be entitled to compensation. Free, confidential case review with Kitsinian Law Firm.</p>
+    <p class="hero-sub">AFFECTED BY THE FIRE AND SMOKE?<br/>YOU MAY BE OWED COMPENSATION.</p>
+    <p class="lede">If you or your family have been affected by the June 2026 fire at the Lineage Logistics cold-storage warehouse in Boyle Heights, and by the smoke and pollution it continues to send across the community, you may be entitled to compensation. Free, confidential case review with Kitsinian Law Firm.</p>
     <div class="cta-row">
       <a href="#form" class="cta-primary">START MY FREE CASE REVIEW →</a>
       <a href="tel:8884805858" class="cta-secondary">
@@ -874,14 +874,14 @@ footer .contact-cta a {
 
     <div class="explainer">
       <h3>What happened?</h3>
-      <p>A days-long fire broke out on June 17, 2026 at the <strong>Lineage Logistics cold-storage warehouse</strong> in Boyle Heights. Officials ordered a shelter-in-place that day and lifted it on June 19, and Governor Newsom declared a State of Emergency on June 21. The fire sent a heavy smoke plume across the area, and air quality reached Unhealthy to Very Unhealthy levels under a multi-day SCAQMD smoke advisory. An anhydrous ammonia line inside the building was breached during the fire; LAFD, SCAQMD, and Los Angeles County health officials reported no measurable ammonia in the surrounding community. The cause is under investigation, and the operator has pointed to a third-party rooftop solar contractor.</p>
+      <p>A major fire broke out on June 17, 2026 at the <strong>Lineage Logistics cold-storage warehouse</strong> in Boyle Heights. Officials ordered a shelter-in-place that day and lifted it on June 19, and Governor Newsom declared a State of Emergency on June 21. The fire has continued to burn and send heavy smoke across the area, with air quality reaching Unhealthy to Very Unhealthy levels under a multi-day SCAQMD smoke advisory affecting surrounding communities. An anhydrous ammonia line inside the building was breached during the fire; LAFD, SCAQMD, and Los Angeles County health officials reported no measurable ammonia in the surrounding community. The cause is under investigation, and the operator has pointed to a third-party rooftop solar contractor.</p>
     </div>
 
     <div class="qualifier">
       <ul>
         <li>
           <span class="check"><svg viewBox="0 0 24 24" stroke="#0A0A0A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 12.5 L10 17.5 L19 7"/></svg></span>
-          <span>Were ordered to shelter in place or evacuate in Boyle Heights, East Los Angeles, Maywood, Montebello, or Bell</span>
+          <span>Live, work, or own property in Boyle Heights, East Los Angeles, Maywood, Montebello, Bell, or a nearby Los Angeles County community affected by the fire and smoke</span>
         </li>
         <li>
           <span class="check"><svg viewBox="0 0 24 24" stroke="#0A0A0A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 12.5 L10 17.5 L19 7"/></svg></span>
@@ -893,7 +893,7 @@ footer .contact-cta a {
         </li>
         <li>
           <span class="check"><svg viewBox="0 0 24 24" stroke="#0A0A0A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 12.5 L10 17.5 L19 7"/></svg></span>
-          <span>Experienced symptoms during the smoke advisory, or are unsure whether you were affected; we'll help you find out at no cost</span>
+          <span>Experienced symptoms during the smoke advisory, were ordered to shelter in place or evacuate, or are unsure whether you were affected; we'll help you find out at no cost</span>
         </li>
       </ul>
     </div>
@@ -947,17 +947,14 @@ footer .contact-cta a {
       </div>
 
       <div class="field">
-        <label for="crossStreets">Nearest cross streets<span class="opt"> (optional)</span></label>
-        <input id="crossStreets" name="cross_streets" type="text" placeholder="e.g., 25th St & Indiana St" autocomplete="off" />
-      </div>
-
-      <div class="field">
-        <label for="evac">Were you ordered to shelter in place or evacuate?<span class="req">*</span></label>
+        <label for="evac">How were you affected by the fire and smoke?<span class="req">*</span></label>
         <select id="evac" name="evacuation_date" required>
           <option value="">— select —</option>
-          <option>Yes, ordered to shelter in place or evacuate (June 17–19, 2026)</option>
-          <option>Sheltered in place at home</option>
-          <option>Live or work in the area, not ordered out</option>
+          <option>Smoke, soot, or ash reached my home or business</option>
+          <option>I was ordered to shelter in place or evacuate</option>
+          <option>I had symptoms or health effects from the smoke</option>
+          <option>I incurred costs (relocation, cleanup, lost wages, etc.)</option>
+          <option>I live or work in the area and was affected</option>
         </select>
       </div>
 
@@ -1209,7 +1206,6 @@ footer .contact-cta a {
     const addr = parseAddress(form.address.value);
     const evacLabel = form.evacuation_date.value;
     const evacIso = evacMap[evacLabel] || '2026-06-17';
-    const crossStreets = (form.cross_streets && form.cross_streets.value || '').trim();
     const symptomChecks = form.querySelectorAll('input[type="checkbox"][name^="symptom_"]:checked');
     const symptomList = Array.from(symptomChecks).map(cb => cb.value);
     const symptoms = symptomList.length > 0 ? symptomList.join('; ') : 'None reported';
@@ -1217,11 +1213,10 @@ footer .contact-cta a {
 
     const summaryLines = [
       'Lineage Fire (Boyle Heights) — Lead Form Submission',
-      `Shelter-in-place / evacuation: ${evacLabel}`,
+      `How affected: ${evacLabel}`,
       `Symptoms reported: ${symptoms}`,
       `Address at time of fire: ${form.address.value}`,
     ];
-    if (crossStreets) summaryLines.push(`Nearest cross streets: ${crossStreets}`);
     if (message) summaryLines.push(`Additional message: ${message}`);
     summaryLines.push('Source: lineagefire.com');
     const summary = summaryLines.join('\n');

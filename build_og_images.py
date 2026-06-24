@@ -195,7 +195,7 @@ def main():
     build_og(
         headline_lines=["BOYLE HEIGHTS", "WAREHOUSE FIRE"],
         head_sizes=[120, 110],
-        yellow_bar_text="SHELTER-IN-PLACE?  YOU MAY BE OWED COMPENSATION",
+        yellow_bar_text="AFFECTED BY THE FIRE & SMOKE?  YOU MAY BE OWED COMPENSATION",
         trust_line="FREE CASE REVIEW · NO ATTORNEYS' FEES UNLESS WE RECOVER",
         trust_size=20,
         domain="lineagefire.com",
@@ -207,7 +207,7 @@ def main():
     build_og(
         headline_lines=["INCENDIO EN BODEGA", "BOYLE HEIGHTS"],
         head_sizes=[95, 120],
-        yellow_bar_text="¿REFUGIO EN CASA?  PUEDE TENER COMPENSACIÓN",
+        yellow_bar_text="¿AFECTADO POR EL INCENDIO Y EL HUMO?  PUEDE TENER COMPENSACIÓN",
         trust_line="CONSULTA GRATIS · SIN HONORARIOS A MENOS QUE RECUPEREMOS",
         trust_size=20,
         domain="lineagefire.com/es",
