@@ -832,10 +832,15 @@ footer .contact-cta a {
         <textarea id="message" name="message" rows="4" placeholder="Cualquier cosa adicional que quiera contarnos sobre su situación..."></textarea>
       </div>
 
+      <label class="sms-optin" style="display:flex;align-items:flex-start;gap:11px;margin:2px 0 8px;font-size:13px;line-height:1.5;color:var(--muted);cursor:pointer;text-align:left;">
+        <input type="checkbox" id="sms_optin" name="sms_optin" style="margin-top:3px;flex-shrink:0;width:18px;height:18px;accent-color:#E8531F;" />
+        <span>Al marcar esta casilla, usted consiente recibir mensajes de texto SMS de servicio al cliente de Kitsinian Law Firm, APC sobre su consulta. Pueden aplicar tarifas de mensajes y datos. La frecuencia de mensajes varía. Responda STOP para cancelar, HELP para ayuda. Consulte nuestra <a href="privacy.html" style="color:var(--gold);text-decoration:underline;">Política de Privacidad</a> y <a href="terms.html" style="color:var(--gold);text-decoration:underline;">Términos de Servicio</a>.</span>
+      </label>
+
       <button type="submit" class="submit">ENVIAR — INICIAR MI CONSULTA GRATIS</button>
 
       <p class="privacy">
-        Al enviar, usted autoriza a Kitsinian Law Firm, APC a contactarle sobre su posible reclamo. El envío de este formulario no crea una relación abogado-cliente. Su información es confidencial. Sin honorarios de abogado a menos que recuperemos. <a href="#disclosure">Aviso legal completo ↓</a>
+        <a href="#disclosure">Aviso legal completo ↓</a>
       </p>
     </form>
 
@@ -958,6 +963,8 @@ footer .contact-cta a {
     <strong>Publicidad Legal</strong> · Este sitio web tiene fines informativos generales. Nada en este sitio debe interpretarse como asesoría legal para ningún caso o situación individual. Esta información no pretende crear, y la recepción o visualización no constituye, una relación abogado-cliente. Los resultados pasados no garantizan resultados futuros. Sin honorarios de abogado a menos que recuperemos. El cliente puede ser responsable de los costos en algunos asuntos. El envío del formulario de contacto no crea una relación abogado-cliente. Kitsinian Law Firm, APC. Nareg Kitsinian, Esq., abogado responsable. Oficina: 16501 Ventura Blvd, Suite 506, Encino, CA 91436. Consulta inicial gratuita.
     <br/><br/>
     © 2026 Kitsinian Law Firm, APC. Todos los derechos reservados. Página actualizada: 24 de junio de 2026.
+    <br/>
+    <a href="privacy.html" style="color:var(--gold);">Política de Privacidad</a> · <a href="terms.html" style="color:var(--gold);">Términos de Servicio</a>
   </p>
 </footer>
 
@@ -1058,6 +1065,7 @@ footer .contact-cta a {
       `Symptoms reported: ${symptoms}`,
       `Address at time of fire: ${form.address.value}`,
     ];
+    summaryLines.push(`SMS consent: ${form.sms_optin && form.sms_optin.checked ? 'Yes' : 'No'}`);
     if (message) summaryLines.push(`Additional message: ${message}`);
     summaryLines.push('Source: lineagefire.com/es');
     const summary = summaryLines.join('\n');
@@ -1079,6 +1087,7 @@ footer .contact-cta a {
       Summary: summary,
       Preferred_Language: 'Spanish',
       Marketing_Source: 'Lineage Fire — Website Form',
+      sms_consent: !!(form.sms_optin && form.sms_optin.checked),
     };
 
     try {
