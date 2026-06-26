@@ -201,26 +201,26 @@ def main():
     # English — "WAREHOUSE FIRE" sized down to fit on one line at 1200px width.
     # Trust line lengthened to match the compliant phrasing used sitewide; font dropped to 20pt.
     build_og(
-        headline_lines=["BOYLE HEIGHTS", "WAREHOUSE FIRE"],
-        head_sizes=[120, 110],
+        headline_lines=["LINEAGE LOGISTICS", "WAREHOUSE FIRE"],
+        head_sizes=[96, 112],
         yellow_bar_text="AFFECTED BY THE FIRE & SMOKE?  YOU MAY BE OWED COMPENSATION",
         trust_line="FREE CASE REVIEW · NO ATTORNEYS' FEES UNLESS WE RECOVER",
         trust_size=20,
         domain="lineagefire.com",
         output_filename="og-en.jpg",
-        date_text="JUNE 2026",
+        date_text="BOYLE HEIGHTS · JUNE 2026",
     )
 
     # Spanish — line 1 "INCENDIO EN BODEGA" sized down (long), line 2 stays big.
     build_og(
-        headline_lines=["INCENDIO EN BODEGA", "BOYLE HEIGHTS"],
-        head_sizes=[95, 120],
+        headline_lines=["INCENDIO EN BODEGA", "LINEAGE LOGISTICS"],
+        head_sizes=[95, 100],
         yellow_bar_text="¿AFECTADO POR EL INCENDIO Y EL HUMO?  PUEDE TENER COMPENSACIÓN",
         trust_line="CONSULTA GRATIS · SIN HONORARIOS A MENOS QUE RECUPEREMOS",
         trust_size=20,
         domain="lineagefire.com/es",
         output_filename="og-es.jpg",
-        date_text="JUNIO 2026",
+        date_text="BOYLE HEIGHTS · JUNIO 2026",
     )
 
 
