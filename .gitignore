@@ -1,3 +1,11 @@
 .DS_Store
 node_modules/
 *.log
+
+# Internal working files. GitHub Pages publishes every tracked file at the domain
+# root and robots.txt allows crawling, so build scripts and internal docs must not
+# be tracked here. Removed from the live site 2026-08-16.
+build_og_images.py
+DEPLOY.md
+*.md
+!index.md
